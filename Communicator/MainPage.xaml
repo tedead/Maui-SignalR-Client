@@ -16,9 +16,10 @@
                 HorizontalOptions="Center" />
 
 
-            <Entry
+            <Label
                 x:Name="messageList"
-                ></Entry>
+                Text=""
+                ></Label>
             
             <Entry
                   MaxLength="50"
@@ -31,13 +32,6 @@
                   Style="{StaticResource CommonEntryStyle}"
                   Text="jkhkljhjhkjh" 
                 x:Name="message"/>
-            
-            <Button
-                x:Name="ConnectBtn"
-                Text="Connect"
-                SemanticProperties.Hint="Connect"
-                Clicked="ConnectClicked"
-                HorizontalOptions="Center" />
 
             <Button
                 x:Name="SendBtn"
