@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Communicator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+
+            <Entry
+                x:Name="messageList"
+                ></Entry>
+            
+            <Entry
+                  MaxLength="50"
+                  Style="{StaticResource CommonEntryStyle}"
+                  Text="Jason" 
+                x:Name="name"/>
+
+            <Entry
+                  MaxLength="500"
+                  Style="{StaticResource CommonEntryStyle}"
+                  Text="jkhkljhjhkjh" 
+                x:Name="message"/>
+            
+            <Button
+                x:Name="ConnectBtn"
+                Text="Connect"
+                SemanticProperties.Hint="Connect"
+                Clicked="ConnectClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="SendBtn"
+                Text="Send"
+                SemanticProperties.Hint="Send message"
+                Clicked="SendClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
